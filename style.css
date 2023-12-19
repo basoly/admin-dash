@@ -2,3 +2,36 @@ img {
     width: 50px;
     border-radius: 25px;
 }
+
+nav>img {
+    width: 20px;
+    background-color: lightblue;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'sbar header'
+    'sbar section';
+}
+
+header {
+    grid-area: header;
+    background-color: lightgreen;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+header>div {
+    border: 1px red dashed;
+}
+
+nav {
+    grid-area: sbar;
+    background-color: lightblue;
+}
+
+section {
+    grid-area: section;
+    background-color: lightcoral;
+}
