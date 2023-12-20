@@ -1,6 +1,7 @@
 img {
-    width: 50px;
+    width: 20px;
     border-radius: 25px;
+	height: auto;
 }
 
 nav>img {
@@ -15,15 +16,25 @@ body {
     'sbar section';
 }
 
+
+
 header {
     grid-area: header;
     background-color: lightgreen;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header>div {
     border: 1px red dashed;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+header>div>div {
+	display:flex;
+	flex-flow: row nowrap;
 }
 
 nav {
@@ -34,4 +45,116 @@ nav {
 section {
     grid-area: section;
     background-color: lightcoral;
+}
+
+.greeting {
+	display: flex;
+	flex-flow: column wrap;
+	/* border: 2px blue solid; */
+}
+
+.flex-sidebar {
+	display: flex;
+	flex-flow: row nowrap;
+	/* justify-content: space-between; */
+	column-gap: 10px;
+}
+
+.header-buttons {
+	display:flex;
+	flex-flow: row nowrap;
+	column-gap: 10px;
+}
+
+.align-right {
+	margin-left:auto;
+}
+
+.flex-column {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-left: 300px;
+}
+
+.header-buttons>div{
+	border-radius: 80px;
+	background-color: aqua;
+	padding: 5px;
+}
+
+.sbar-title {
+	font-size: 15px;
+	color: white;
+	font-weight: bold}
+
+.sbar-text {
+	color: white;
+	font-size: 10px;}
+
+.search-bar {
+	background-color: lightgray;
+	border-radius: 200px;
+	color: lightgray;
+	padding-right: 100px;
+}
+
+	
+.small-icon {
+	width: 5px;
+	height: auto;}
+
+.large-profile-pic {
+	width: 30px;}
+	
+.small-profile-pic {
+	width: 15px;}
+
+.project-title {
+	font-size: 20px;
+	font-weight: bold;}
+
+.project-text {
+	font-size: 10px;
+	font-weight: 100;
+	color: lightgray;}
+	
+.project-card {
+	box-shadow: 0px 5px 5px lightgray;
+	border-radius: 20px;}
+
+.announce-title {
+	font-size: 15px;
+	font-weight: bold;}
+	
+.announce-text {
+	color: lightgray;
+	font-size: 10px;}
+	
+.trending-text {
+	font-size: 10px;
+	font-weight: 100;
+	color: lightgray;}
+	
+.header-button {
+	background-color: blue;
+	color: white;
+	border-radius: 200px;}
+
+.header-name {
+	font-weight: bold;
+	font-size: 10px;}
+
+.large-name {
+	font-weight: bold;
+	font-size: 20px;}
+
+.only-start {
+  background: linear-gradient(
+    to right,
+    red,
+    red, 
+	1rem,
+    transparent 1rem,
+    transparent 100%
+  );
 }
