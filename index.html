@@ -9,22 +9,25 @@
 <body>
     <header>
         <div><!--Search icon, Search bar, bell, avatar, Icon, Name-->
-            <div class="flex-sidebar">
-                <img src="search-icon.svg" alt="magnifying glass icon">
-                <div class="search-bar">Search</div><!--Convert to input field-->
-                <div class="align-right flex-column">
+            <div class="flex-row space-between">
+                <div class="flex-row">
+                    <img src="search-icon.svg" alt="magnifying glass icon">
+                    <div class="search-bar">Search</div><!--Convert to input field-->
+                </div>
+                <div class="flex-row">
                     <img  src="bell-icon.svg" alt="bell icon">
                     <img src="profile-pic.jpg" alt="PLACEHOLDER">
-                    <div class="sbar-text">PLACEHOLDER NAME</div></div>
+                    <div class="sbar-text">PLACEHOLDER NAME</div>
+                </div>
             </div>
         </div>
-        <div class='flex-sidebar'><!--icon, greeting, name, three buttons-->
+        <div class='flex-sidebar'>
             <img class="large-profile-pic" src="profile-pic.jpg" alt="large profile pic">
             <div class="greeting">
                 <div class="sbar-text">Hi There,</div>
                 <div class="sbar-title">PLACEHOLDER NAME</div>
             </div>
-            <div class="header-buttons align-right"> <!--Three buttons-->
+            <div class="header-buttons align-right"> 
                 <div>New</div>
                 <div>Upload</div>
                 <div>Share</div>
@@ -32,138 +35,199 @@
         </div>
     </header>
     <!-- <nav>Navigation</nav> -->
-    <nav>Sidebar
-        <div>
+    <nav class="flex-column">
+
+        <div class="flex-row red-border">
             <img src="dashboard-icon.svg" alt="dashboard logo">
             <div>Dashboard</div>
         </div>
-        <div>Home-Communities
-            <div>
-                <img src="home-icon.svg" alt="home icon">
-                <div>Home</div>
-            </div>
-            <div>
-                <img src="profile-icon.svg" alt="profile icon">
-                <div>Profile</div>
-            </div>
-            <div>
-                <img src="messages-icon.svg" alt="messages icon">
-                <div>Messages</div>
-            </div>
-            <div>
-                <img src="history-icon.svg" alt="clock icon">
-                <div>History</div>
-            </div>
-            <div>
-                <img src="tasks-icon.svg" alt="papers icon">
-                <div>Tasks</div>
-            </div>
-            <div>
-                <img src="com-icon.svg" alt="communities icon">
-                <div>Communities</div>
-            </div>
+
+        <div class='flex-column red-border'> 
+            <div class="flex-row"> <img class=small-icon src="home-icon.svg" alt="home icon"> <div>Home</div> </div>
+            <div class="flex-row"><img class=small-icon src="profile-icon.svg" alt="profile icon"> <div>Profile</div> </div>
+            <div class="flex-row"><img class=small-icon src="message-icon.svg" alt="messages icon"> <div>Messages</div> </div>
+            <div class="flex-row"><img class=small-icon src="history-icon.svg" alt="clock icon"> <div>History</div> </div>
+            <div class="flex-row"><img class=small-icon src="tasks-icon.svg" alt="papers icon"> <div>Tasks</div> </div>
+            <div class="flex-row"><img class=small-icon src="com-icon.svg" alt="communities icon"> <div>Communities</div> </div>
         </div>
-        <div>Settings, Support, Privacy
-            <div>
-                <img src="settings-icon.svg" alt="gear icon">
-                <div>Settings</div>
-            </div>
-            <div>
-                <img src="support-icon.svg" alt="question block icon">
-                <div>Support</div>
-            </div>
-            <div>
-                <img src="privacy-icon.svg" alt="shield with checkmark icon">
-                <div>Privacy</div>
-            </div>
+
+        <div class='flex-column'>
+            <div class="flex-row"> <img src="settings-icon.svg" alt="gear icon"> <div>Settings</div> </div>
+            <div class="flex-row"> <img src="support-icon.svg" alt="question block icon"> <div>Support</div> </div>
+            <div class="flex-row"> <img src="privacy-icon.svg" alt="shield with checkmark icon"> <div>Privacy</div> </div>
         </div>
 
     </nav>
-    <section>Middle
-        <div>Your projects
-            <div>Your Projects</div>
-            <div>
-                <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div>
-                        <img src="star-icon.svg" alt="star icon">
-                        <img src="eye-icon.svg" alt="eye icon">
-                        <img src="share-icon.svg" alt="share icon"></div>
+
+    <section class="main-body-container">
+        <div class='projects'> 
+            <div class='project-area-title'> Your Projects </div>
+	
+            <div class='card-area red-border'> 
+            
+                <div class='card flex-column split-bg'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
                 </div>
-                <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div><img src="star-icon.svg" alt="star icon"><img src="eye-icon" alt="eye icon"><img src="share-icon" alt="share icon"></div>
+            
+            
+            
+                <div class='card flex-column'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
                 </div>
-                <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div><img src="star-icon.svg" alt="star icon"><img src="eye-icon" alt="eye icon"><img src="share-icon" alt="share icon"></div>
+                <div class='card flex-column'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
                 </div>
-                <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div><img src="star-icon.svg" alt="star icon"><img src="eye-icon" alt="eye icon"><img src="share-icon" alt="share icon"></div>
+                <div class='card flex-column'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
                 </div>
-                <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div><img src="star-icon.svg" alt="star icon"><img src="eye-icon" alt="eye icon"><img src="share-icon" alt="share icon"></div>
+                <div class='card flex-column'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
                 </div>
+                <div class='card flex-column'> 
+                    
+                    <div class='project-title'> Super Cool Project </div>
+            
+                    <div class='project-text'> Sed tempus ut lacus ut scelerisque. 
+                                                                            Suspendisse sollicitudin ... </div>
+            
+                    <div class='icon-box'> 
+                            <img src='star-icon.svg'> 
+                            <img src='eye-icon.svg'> 
+                            <img src='share-icon.svg'> 
+                    </div>
+            
+                </div>
+            
+            </div>
+        </div>
+
+
+        <div class='announcements'>
+            <div class='area-title'> Announcements </div>
+            <div class='card    white-bg'> <!-- two separate classes-->
+
                 <div>
-                    <div>Project Title</div>
-                    <div>Dummy Text</div>
-                    <div><img src="star-icon.svg" alt="star icon"><img src="eye-icon" alt="eye icon"><img src="share-icon" alt="share icon"></div>
+                    <div class='ann-title'> Site Maintenance </div>
+                    <div class='ann-text'> Vestibulum condimentum tellus lacus, in accusam...</div> 
+                </div>
+                
+                <div class='divider-line'></div>
+    
+                <div>
+                    <div class='ann-title'> Community Share Day</div>
+                    <div class='ann-text'> Nam vel lectus tincidunt, rutrum nulla eu, ornare...</div>
+                </div>
+    
+                <div class='divider-line'> </div>
+    
+                <div>
+                    <div class='ann-title'> Updated Privacy Policy</div>
+                    <div class='ann-text'>Nam vel lectus tincidunt, rutrum nulla eu, ornare...</div>
                 </div>
             </div>
         </div>
-        <div>Announcements Block
-            <div>Announcements</div>
-            <div>
-                <div>
-                    <div>Site Maintenance</div>
-                    <div>Dummy Text</div>
+
+
+
+
+
+        <div class='trending'> 
+            <div class='area-title'> Trending </div>
+            <div class='card    white-bg'>  <!-- two separate classes-->
+        
+                <div class='trend-user flex-row'> 
+        
+                    <img src='user-icon-1.jpg'> 
+                    <div class='user-info ann-text'> 
+                        <div>@tegan</div> 
+                        <div>World Peace Builder</div> 
+                    </div> 
+        
                 </div>
-                <div>
-                    <div>Community Share Day</div>
-                    <div>Dummy Text</div>
+        
+                <div class='trend-user flex-row'> 
+        
+                    <img src='user-icon-3.jpg'> 
+                    <div class='user-info ann-text'> 
+                        <div>@tegan</div> 
+                        <div>World Peace Builder</div> 
+                    </div> 
+        
                 </div>
-                <div>
-                    <div>Updated Privacy Policy</div>
-                    <div>Dummy Text</div>
+                <div class='trend-user flex-row'> 
+        
+                    <img src='user-icon-4.jpg'> 
+                    <div class='user-info ann-text'> 
+                        <div>@tegan</div> 
+                        <div>World Peace Builder</div> 
+                    </div> 
+        
                 </div>
-            </div>
-        </div>
-        <div>Trending Block
-            <div>Trending</div>
-            <div>
-                <img src="user-icon-1.jpg" alt="">
-                <div>
-                    <div>Bold usertag</div>
-                    <div>Small title</div>
+                <div class='trend-user flex-row'> 
+        
+                    <img src='profile-pic.jpg'> 
+                    <div class='user-info ann-text'> 
+                        <div>@tegan</div> 
+                        <div>World Peace Builder</div> 
+                    </div> 
+        
                 </div>
-            </div>
-            <div>
-                <img src="profile-pic.jpg" alt="">
-                <div>
-                    <div>Bold usertag</div>
-                    <div>Small title</div>
-                </div>
-            </div>
-            <div>
-                <img src="user-icon-3.jpg" alt="">
-                <div>
-                    <div>Bold usertag</div>
-                    <div>Small title</div>
-                </div>
-            </div>
-            <div>
-                <img src="user-icon-4.jpg" alt="">
-                <div>
-                    <div>Bold usertag</div>
-                    <div>Small title</div>
-                </div>
+        
             </div>
         </div>
     </section>

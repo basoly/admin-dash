@@ -4,10 +4,10 @@ img {
 	height: auto;
 }
 
-nav>img {
+/* nav>img {
     width: 20px;
     background-color: lightblue;
-}
+} */
 
 body {
     display: grid;
@@ -26,25 +26,149 @@ header {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header>div {
+/* header>div {
     border: 1px red dashed;
 	display: flex;
 	flex-flow: row nowrap;
-}
+} */
 
-header>div>div {
+/* header>div>div {
 	display:flex;
 	flex-flow: row nowrap;
-}
+} */
 
 nav {
     grid-area: sbar;
-    background-color: lightblue;
+    background-color: aqua;
+	display: flex;
+	flex-flow: column nowrap;
+	row-gap: 50px;
+}
+
+.red-border {
+	border: 1px red dashed;
 }
 
 section {
     grid-area: section;
     background-color: lightcoral;
+}
+
+.main-body-container {
+	display: grid;
+	grid-template-areas: 'proj proj ann'
+						'proj proj trend';
+	background-color: lightblue;
+}
+
+.projects {
+	grid-area: proj;
+	display: block;
+}
+
+.project-area-title {
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	}
+	
+	.card-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+	
+	.split-bg {
+	background: linear-gradient('to right', orange 30%, white 70%)
+	}
+	
+	.card {
+	
+	/* background: linear-gradient(direction, color, color, color, color); */
+	border-radius: 10px;
+	margin: 5px;
+	padding: 10px;
+	box-shadow: 0px 5px 5px gray;
+	display: block;
+	background-color: white;
+	
+	}
+	
+	.flex-column {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+	
+	.project-title {
+		font-size: 20px;
+		font-weight: bold;
+	}
+	
+	.project-text {
+		font-size: 10px;
+		font-weight: 100;
+		color: lightgray;
+	}
+	
+	.icon-box {
+	float: right; /* to move box to the right of row */
+	width: 10px;
+	height: auto;
+	display:flex; /* to align children */
+	flex-flow: row nowrap;
+	justify-content: space-between; /* or flex-end and then add gap between icons */
+	}
+
+.announcements {
+grid-area: ann;
+}
+
+.white-bg {
+	background-color: white;
+}
+	
+.announcements {
+		display:block;
+}
+	
+.area-title {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+	
+.ann-title {
+	
+	font-weight: bold;
+	font-size: 15px;
+	color: black
+	
+}
+	
+.ann-text {
+		font-size: 10px;
+		font-weight: 100;
+		color: lightgray;
+}
+	
+.divider-line {
+	height:1px;
+	width: 100%;
+	background-color: lightgray;
+}
+
+
+.trending {
+	grid-area: trend;
+	display: block;
+}
+
+.trend-user {
+	display: inline;
+	margin: 10px;
+}
+
+.user-info {
+	display:block;
 }
 
 .greeting {
@@ -53,11 +177,30 @@ section {
 	/* border: 2px blue solid; */
 }
 
+.flex-column {
+	display: flex;
+	flex-flow: column nowrap;
+	/* margin-right:auto; */
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.sidebar-spacing {
+	gap: 20px;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
 .flex-sidebar {
 	display: flex;
 	flex-flow: row nowrap;
-	/* justify-content: space-between; */
-	column-gap: 10px;
+	justify-content: space-between;
+	/* column-gap: 10px; */
 }
 
 .header-buttons {
@@ -70,11 +213,6 @@ section {
 	margin-left:auto;
 }
 
-.flex-column {
-	display: flex;
-	flex-flow: row nowrap;
-	margin-left: 300px;
-}
 
 .header-buttons>div{
 	border-radius: 80px;
@@ -93,14 +231,14 @@ section {
 
 .search-bar {
 	background-color: lightgray;
-	border-radius: 200px;
+	border-radius: 100px;
 	color: lightgray;
 	padding-right: 100px;
 }
 
 	
 .small-icon {
-	width: 5px;
+	width: 15px;
 	height: auto;}
 
 .large-profile-pic {
@@ -122,18 +260,7 @@ section {
 	box-shadow: 0px 5px 5px lightgray;
 	border-radius: 20px;}
 
-.announce-title {
-	font-size: 15px;
-	font-weight: bold;}
-	
-.announce-text {
-	color: lightgray;
-	font-size: 10px;}
-	
-.trending-text {
-	font-size: 10px;
-	font-weight: 100;
-	color: lightgray;}
+
 	
 .header-button {
 	background-color: blue;
